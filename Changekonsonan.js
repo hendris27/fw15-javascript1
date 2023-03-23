@@ -1,6 +1,12 @@
-console.log('ubah konsonan \n')
-let a = "jakarta"
+let inputString = "Jakarta";
+let outputString = "";
 
-let string = a;
-let newString = string.replace(/a/g, "o");
-console.log(newString);
+for (let i = 0; i < inputString.length; i++) {
+  if (inputString[i] === "a") {
+    outputString += "o";
+  } else {
+    outputString += inputString[i];
+  }
+}
+
+console.log(outputString);
